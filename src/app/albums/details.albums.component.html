@@ -1,0 +1,21 @@
+<!-- <div *ngFor="let item of details"> -->
+    <div class="col-sm-4 col-md-4 col-lg-4">
+        <div class="well">
+            <h1 class="text-warning">{{detail.id}}</h1>
+            <p><span class="label label-default">Disponible</span>
+            </p>
+            <ul class="list-group">
+                <li class="list-group-item"><b>Titulo:</b> {{detail.title}}</li>
+                <!-- <li class="list-group-item"><b>Precio:</b> {{item.precio}}</li>
+                <li class="list-group-item"><b>Stock:</b> {{item.stock}}</li>
+                <li class="list-group-item"><b>Fecha:</b> {{item.fecha}}</li> -->
+                <li class="list-group-item">
+                    <!-- <img src="~/fonts/Images/{{item.Foto}}" alt="{{item.Foto}}" /> -->
+                </li>
+            </ul>
+            <a class="btn btn-warning" >Comprar</a>
+            <a class="btn btn-warning" href="/albums">Volver</a>
+            <!-- [routerLink]="['/albums/forId']" [queryParams]="{ id: item.id }" -->
+        </div>
+    </div>
+  <!-- </div> -->

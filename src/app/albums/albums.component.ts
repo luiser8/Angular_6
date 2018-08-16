@@ -22,4 +22,8 @@ export class AlbumsComponent implements OnInit {
     });
   }
 
+  buy(e, item){
+    console.log(item);
+  }
+
 }

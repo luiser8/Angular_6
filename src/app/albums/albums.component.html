@@ -27,9 +27,7 @@
                   <!-- <img src="~/fonts/Images/{{item.Foto}}" alt="{{item.Foto}}" /> -->
               </li>
           </ul>
-          <button class="btn btn-primary btn-sm">Comprar</button>
-          <!-- <button class="btn btn-success btn-sm">Editar</button>
-          <button class="btn btn-danger btn-sm">Eliminar</button> -->
+          <a [routerLink]="['/albums/buy']" [queryParams]="{ id: item.id }">Comprar</a>
       </div>
   </div>
 </div>
