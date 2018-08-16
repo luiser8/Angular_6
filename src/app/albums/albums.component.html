@@ -1,4 +1,4 @@
-<table class="table">
+<!-- <table class="table">
   <tr>
     <th>ID</th>
     <th>TITLE</th>
@@ -11,4 +11,25 @@
       <a href="edit/{{item.id}}">Editar</a>
     </td>
   </tr>
-</table>
+</table> -->
+<div *ngFor="let item of datos">
+  <div class="col-sm-4 col-md-4 col-lg-4">
+      <div class="well">
+          <h1 class="text-warning">{{item.id}}</h1>
+          <p><span class="label label-default">Disponible</span>
+          </p>
+          <ul class="list-group">
+              <li class="list-group-item"><b>Titulo:</b> {{item.title}}</li>
+              <!-- <li class="list-group-item"><b>Precio:</b> {{item.precio}}</li>
+              <li class="list-group-item"><b>Stock:</b> {{item.stock}}</li>
+              <li class="list-group-item"><b>Fecha:</b> {{item.fecha}}</li> -->
+              <li class="list-group-item">
+                  <!-- <img src="~/fonts/Images/{{item.Foto}}" alt="{{item.Foto}}" /> -->
+              </li>
+          </ul>
+          <button class="btn btn-primary btn-sm">Comprar</button>
+          <!-- <button class="btn btn-success btn-sm">Editar</button>
+          <button class="btn btn-danger btn-sm">Eliminar</button> -->
+      </div>
+  </div>
+</div>

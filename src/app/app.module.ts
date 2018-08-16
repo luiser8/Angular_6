@@ -8,11 +8,13 @@ import { UsersComponent } from './users/users.component';
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 import { AlbumsComponent } from './albums/albums.component';
+import { CountriesComponent } from './countries/countries.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'users', component: UsersComponent},
   { path: 'albums', component: AlbumsComponent},
+  { path: 'countries', component: CountriesComponent},
   { path: '404', component: ErrorComponent},
   { path: '**', redirectTo: '/404'}
 ];
@@ -23,7 +25,8 @@ const appRoutes: Routes = [
     UsersComponent,
     ErrorComponent,
     HomeComponent,
-    AlbumsComponent
+    AlbumsComponent,
+    CountriesComponent
   ],
   imports: [
     BrowserModule,

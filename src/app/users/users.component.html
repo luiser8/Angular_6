@@ -1,3 +1,21 @@
-<p>
-  users works!
-</p>
+<div *ngFor="let jugador of jugadores">
+  <div class="col-sm-4 col-md-4 col-lg-4">
+      <div class="well">
+          <h1 class="text-warning">{{jugador.nombre}}</h1>
+          <p><span class="label label-default">Disponible</span>
+          </p>
+          <ul class="list-group">
+              <li class="list-group-item"><b>Edad:</b> {{jugador.edad}}</li>
+              <li class="list-group-item"><b>Apodo:</b> {{jugador.apodo}}</li>
+              <li class="list-group-item"><b>Posicion:</b> {{jugador.posicion}}</li>
+              <li class="list-group-item"><b>Estado:</b> {{jugador.estado}}</li>
+              <li class="list-group-item">
+                  <img src="../../assets/images/{{jugador.foto}}" alt="Sin foto" />
+              </li>
+          </ul>
+          <button class="btn btn-primary btn-sm">Comprar</button>
+          <!-- <button class="btn btn-success btn-sm">Editar</button>
+          <button class="btn btn-danger btn-sm">Eliminar</button> -->
+      </div>
+  </div>
+</div>

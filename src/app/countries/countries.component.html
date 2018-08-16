@@ -1,0 +1,4 @@
+<select class="form-control">
+  <option value="0">Countries</option>
+  <option *ngFor="let countrie of countries" value="{{countrie.capital}}">{{countrie.name}}</option>
+</select>
