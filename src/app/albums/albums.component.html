@@ -1,0 +1,14 @@
+<table class="table">
+  <tr>
+    <th>ID</th>
+    <th>TITLE</th>
+    <th>OPCIONES</th>
+  </tr>
+  <tr *ngFor="let item of datos">
+    <td>{{item.id}}</td>
+    <td>{{item.title}}</td>
+    <td>
+      <a href="edit/{{item.id}}">Editar</a>
+    </td>
+  </tr>
+</table>
