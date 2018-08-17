@@ -10,7 +10,8 @@ export class AlbumsComponent implements OnInit {
   datos:any;
   order:any;
 
-  private apiUrl = 'https://jsonplaceholder.typicode.com/albums';
+  //private apiUrl = 'https://jsonplaceholder.typicode.com/albums';
+  private apiUrl = '../assets/albums.json';
 
   constructor(private http: HttpClient) { }
 
